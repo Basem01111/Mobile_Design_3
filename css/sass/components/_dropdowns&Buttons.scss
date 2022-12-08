@@ -18,3 +18,65 @@
   color: $mian-text-color !important;
  }
 }
+.btn-inp-check {
+ background-color: white;
+ padding: 1rem;
+ border-radius: 10px;
+ box-shadow: 0 0 10px 0 #00000024;
+ text-align: center;
+ position: relative;
+ .icon-inp {
+  display: none;
+ }
+ &.check {
+  .icon-inp {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   right: -10px;
+   top: -10px;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   background-color: #0ABAB5;
+   transition: 300ms;
+   -webkit-transition: 300ms;
+   -moz-transition: 300ms;
+   -ms-transition: 300ms;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   -o-transition: 300ms;
+ }
+ }
+.inp {
+  position: absolute;
+width: 100%;
+height: 100%;
+opacity: 0;
+left: 0;
+top: 0;
+}
+.box-icon {
+ border: 2px solid #FFF181;
+ border-radius: 50%;
+ -webkit-border-radius: 50%;
+ -moz-border-radius: 50%;
+ -ms-border-radius: 50%;
+ -o-border-radius: 50%;
+ width: 50px;
+ height: 50px;
+ margin: 0 auto 0.7rem auto;
+ display: flex;
+ align-items: center;
+ color: #F578B6;
+ font-size: 20px;
+ justify-content: center;
+}
+.text {
+ font-size: 16px;
+}
+}
