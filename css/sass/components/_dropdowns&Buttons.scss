@@ -20,36 +20,47 @@
 }
 .btn-inp-check {
  background-color: white;
+ cursor: pointer;
  padding: 1rem;
+ height: 142px;
  border-radius: 10px;
  box-shadow: 0 0 10px 0 #00000024;
  text-align: center;
+ transition: 150ms;
+ -webkit-transition: 150ms;
+ -moz-transition: 150ms;
+ -ms-transition: 150ms;
+ -o-transition: 150ms;
  position: relative;
- .icon-inp {
-  display: none;
- }
+ .inp-icon
+{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: -10px;
+  top: -10px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #0ABAB5;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity:0;
+  transition: 150ms;
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  -ms-transition: 150ms;
+  -o-transition: 150ms;
+}
  &.check {
-  .icon-inp {
-   position: absolute;
-   width: 20px;
-   height: 20px;
-   right: -10px;
-   top: -10px;
-   border-radius: 50%;
-   -webkit-border-radius: 50%;
-   -moz-border-radius: 50%;
-   -ms-border-radius: 50%;
-   -o-border-radius: 50%;
-   background-color: #0ABAB5;
-   transition: 300ms;
-   -webkit-transition: 300ms;
-   -moz-transition: 300ms;
-   -ms-transition: 300ms;
-   color: white;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   -o-transition: 300ms;
+  background-color: #FFF181;
+  .inp-icon {
+   opacity:1;
+
  }
  }
 .inp {
@@ -74,6 +85,7 @@ top: 0;
  align-items: center;
  color: #F578B6;
  font-size: 20px;
+ background-color: white;
  justify-content: center;
 }
 .text {

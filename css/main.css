@@ -57,17 +57,21 @@
 
 .btn-inp-check {
   background-color: white;
+  cursor: pointer;
   padding: 1rem;
+  height: 142px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1411764706);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1411764706);
   text-align: center;
+  transition: 150ms;
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  -ms-transition: 150ms;
+  -o-transition: 150ms;
   position: relative;
 }
-.btn-inp-check .icon-inp {
-  display: none;
-}
-.btn-inp-check.check .icon-inp {
+.btn-inp-check .inp-icon {
   position: absolute;
   width: 20px;
   height: 20px;
@@ -79,10 +83,6 @@
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   background-color: #0ABAB5;
-  transition: 300ms;
-  -webkit-transition: 300ms;
-  -moz-transition: 300ms;
-  -ms-transition: 300ms;
   color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -93,7 +93,18 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -o-transition: 300ms;
+  opacity: 0;
+  transition: 150ms;
+  -webkit-transition: 150ms;
+  -moz-transition: 150ms;
+  -ms-transition: 150ms;
+  -o-transition: 150ms;
+}
+.btn-inp-check.check {
+  background-color: #FFF181;
+}
+.btn-inp-check.check .inp-icon {
+  opacity: 1;
 }
 .btn-inp-check .inp {
   position: absolute;
@@ -121,6 +132,7 @@
           align-items: center;
   color: #F578B6;
   font-size: 20px;
+  background-color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
