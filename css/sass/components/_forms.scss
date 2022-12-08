@@ -88,3 +88,12 @@
  padding: 1rem 1rem;
  border: dashed 2px $color-50;
 }
+.bg-inp-check {
+  background-color: white !important;
+  &:checked {
+    background-color: #0ABAB5 !important;
+    border: 1px solid #0ABAB5;
+    box-shadow: 0 0 0 0.25rem rgba(10, 186, 180, 0.274);
+
+  }
+}

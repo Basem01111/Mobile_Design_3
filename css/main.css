@@ -271,6 +271,16 @@
   border: dashed 2px #4D545A;
 }
 
+.bg-inp-check {
+  background-color: white !important;
+}
+.bg-inp-check:checked {
+  background-color: #0ABAB5 !important;
+  border: 1px solid #0ABAB5;
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(10, 186, 180, 0.274);
+          box-shadow: 0 0 0 0.25rem rgba(10, 186, 180, 0.274);
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
