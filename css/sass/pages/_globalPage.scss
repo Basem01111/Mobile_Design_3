@@ -1,0 +1,41 @@
+* {
+  @include reset-all;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  min-height: 100vh;
+  font-family: "Cairo", sans-serif;
+  font-size: 14px;
+  color: $mian-text-color;
+}
+ul {
+  @include reset-ul;
+}
+a {
+  @include a-reset;
+}
+// reset btn
+button {
+  border: none;
+  outline: none;
+}
+
+// Reset Input
+input:focus,
+select:focus {
+  outline: none;
+}
+
+input {
+  direction: rtl !important;
+  &:focus::placeholder {
+    opacity: 0;
+    transition: $sm-transition;
+  }
+}
+
+.section {
+  padding-bottom: calc(59px + 1rem) !important;
+}

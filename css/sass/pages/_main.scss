@@ -1,0 +1,55 @@
+// Satrt Contact Section
+.contact-section {
+ background-color: $light-mian-color;
+ border-radius:0 0  25px 25px;
+ -webkit-border-radius:0 0  25px 25px;
+ -moz-border-radius:0 0  25px 25px;
+ -ms-border-radius:0 0  25px 25px;
+ -o-border-radius:0 0  25px 25px;
+}
+// End Contact Section
+
+// Start  profile-section 
+.profile-section  {
+ .img-user {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  box-shadow: 0px 1px 7px 0 hsl(0deg 0% 0% / 46%);
+}
+.name-user {
+ font-size: 19px;
+ margin-bottom: 1rem;
+ font-weight: bold;
+}
+.title {
+ background-color: $grey-color;
+ color: $color-50;
+ font-size: 16px;
+ padding: 0.7rem 1rem;
+}
+.list-profile {
+ list-style: none;
+ li {
+  .link {
+   color: $color-50;
+   padding: 0.7rem 1rem;
+   font-size: 16px;
+   display: block;
+   display: flex;
+   align-items: center;
+   gap: 7px;
+   .icon {
+    width: 15px;
+   }
+  }
+ }
+}
+}
+// End  profile-section 
