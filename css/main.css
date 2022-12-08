@@ -353,7 +353,8 @@ input:focus::placeholder {
 }
 
 .section {
-  padding-bottom: 127.5px !important;
+  padding-top: calc(62px + 1rem) !important;
+  padding-bottom: calc(65.5px + 1rem) !important;
 }
 
 .login-section .main-inp {
@@ -410,6 +411,14 @@ input:focus::placeholder {
   height: auto;
 }
 
+.top-nav {
+  position: fixed;
+  left: 0;
+  height: 62px;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
 .top-nav .nav-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,6 +528,7 @@ input:focus::placeholder {
 .header {
   position: relative;
   top: 0;
+  height: 65.5px;
   left: 0;
   width: 100%;
   z-index: 100;

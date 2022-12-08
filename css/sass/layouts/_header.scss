@@ -1,4 +1,10 @@
 .top-nav {
+  position: fixed;
+  left: 0;
+  height: 62px;
+  top: 0;
+  width: 100%;
+  background-color: white;
   .nav-content {
     @include flex-center;
     justify-content: space-between;
@@ -83,6 +89,7 @@
 .header {
   position: relative;
   top: 0;
+  height: 65.5px;
   left: 0;
   width: 100%;
   z-index: 100;
