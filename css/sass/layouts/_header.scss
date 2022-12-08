@@ -11,6 +11,58 @@
           box-shadow: none !important;
         }
       }
+      .offcanvas {
+        width: 290px;
+        .offcanvas-body {
+          .navbar-nav {
+            margin-bottom: 3rem;
+            position: relative;
+            &:not(:last-child) {
+              &::before {
+                content: "";
+                position: absolute;
+                bottom: -21px;
+                left: 0;
+                width: 100%;
+                height: 1px;
+                background-color: #d5d5d5;
+              }
+            }
+            .nav-item {
+              &.nav-img {
+                margin-bottom: 15px;
+                img {
+                  margin-bottom: 10px;
+                  @include circle(75px, 75px)
+                }
+                h5, h6 {
+                  font-weight: 700;
+                }
+                h6 {
+                  color: $mian-color;
+                }
+              }
+              .nav-link {
+                &.active {
+                  background-color: $mian-color;
+                  color: $white-color;
+                  margin-bottom: 10px;
+                }
+                padding: 10px 20px;
+                border-radius: 10px;
+                font-size: 17px;
+                color: $black-color;
+                @include flex-center;
+                justify-content: flex-start;
+                gap: 7px;
+                i, svg {
+                  font-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
     }
     .image-holder {
       a {

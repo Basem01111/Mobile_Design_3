@@ -425,6 +425,56 @@ input:focus::placeholder {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
 }
+.top-nav .nav-content .navbar .offcanvas {
+  width: 290px;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav {
+  margin-bottom: 3rem;
+  position: relative;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  bottom: -21px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #d5d5d5;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item.nav-img {
+  margin-bottom: 15px;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item.nav-img img {
+  margin-bottom: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item.nav-img h5, .top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item.nav-img h6 {
+  font-weight: 700;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item.nav-img h6 {
+  color: #0ABAB5;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 17px;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 7px;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link.active {
+  background-color: #0ABAB5;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link i, .top-nav .nav-content .navbar .offcanvas .offcanvas-body .navbar-nav .nav-item .nav-link svg {
+  font-size: 20px;
+}
 .top-nav .nav-content .image-holder a {
   position: relative;
 }
