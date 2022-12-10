@@ -249,7 +249,6 @@
 
 .box-department {
   position: relative;
-  // min-height: 270px;
   height: 270px;
   border-radius: 16px;
   overflow: hidden;
@@ -301,6 +300,55 @@
   &:hover {
     img {
       transform: scale(1.1) rotate(2deg);
+    }
+  }
+}
+
+.box-services {
+  position: relative;
+  border-radius: 16px;
+  .img-holder {
+    border-radius: 16px;
+    width: 100%;
+    height: 45%;
+    img {
+      border-radius: 16px 16px 0px 0px;
+      @include full-w-h;
+      object-fit: cover;
+    }
+  }
+  .btn-holder {
+    position: absolute;
+    top: 13px;
+    left: 10px;
+  }
+  .text-content {
+    border-radius: 0px 0px 16px 16px;
+    padding: 12px;
+    border: 2px solid $main-border;
+    box-shadow: 0 0 5px 0 #00000017;
+    .name {
+      color: $mian-color;
+      font-size: 17px;
+    }
+    .des {
+      color: #444;
+      // font-size: 11px;
+      font-size: 9px;
+    }
+    .more-info {
+      @include flex-between;
+      .mony, .location {
+        i,svg {
+          color: $pink-color;
+          font-size: 10px;
+          margin-left: 5px;
+        }
+        span {
+          font-size: 11px;
+          color: #333;
+        }
+      }
     }
   }
 }

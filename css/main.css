@@ -501,6 +501,56 @@
   transform: scale(1.1) rotate(2deg);
 }
 
+.box-services {
+  position: relative;
+  border-radius: 16px;
+}
+.box-services .img-holder {
+  border-radius: 16px;
+  width: 100%;
+  height: 45%;
+}
+.box-services .img-holder img {
+  border-radius: 16px 16px 0px 0px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.box-services .btn-holder {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}
+.box-services .text-content {
+  border-radius: 0px 0px 16px 16px;
+  padding: 12px;
+  border: 2px solid #e9e9e9;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.0901960784);
+}
+.box-services .text-content .name {
+  color: #0ABAB5;
+  font-size: 17px;
+}
+.box-services .text-content .des {
+  color: #444;
+  font-size: 9px;
+}
+.box-services .text-content .more-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box-services .text-content .more-info .mony i, .box-services .text-content .more-info .mony svg, .box-services .text-content .more-info .location i, .box-services .text-content .more-info .location svg {
+  color: #f578b6;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.box-services .text-content .more-info .mony span, .box-services .text-content .more-info .location span {
+  font-size: 11px;
+  color: #333;
+}
+
 input:focus::-moz-placeholder {
   opacity: 0;
   transform: 0.3s;
