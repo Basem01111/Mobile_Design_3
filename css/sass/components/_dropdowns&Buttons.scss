@@ -107,3 +107,21 @@
     }
   }
 }
+
+.main-btn-tap {
+  border-radius: 10px !important;
+  -webkit-border-radius: 10px !important;
+  -moz-border-radius: 10px !important;
+  -ms-border-radius: 10px !important;
+  -o-border-radius: 10px !important;
+  padding: 0.3rem 1rem !important ;
+  border: none !important;
+  outline: none !important;
+  text-align: center !important;
+  color:$mian-text-color !important;
+  background-color: transparent !important;
+  &.active {
+    background-color: $light-mian-color2 !important;
+    color: $mian-color !important;
+  }
+}
