@@ -168,6 +168,100 @@
   font-weight: bold;
 }
 
+.categories-box {
+  border: 1px solid #e9e9e9;
+  padding: 15px;
+  border-radius: 11px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.0901960784);
+}
+.categories-box .categories-name {
+  margin-bottom: 0px;
+}
+.categories-box .categories-name a {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #444;
+  font-size: 13px;
+}
+.categories-box .categories-name a i,
+.categories-box .categories-name a svg {
+  color: #8f8f8f;
+  font-size: 12px;
+  transition: 0.3s;
+}
+.categories-box .categories-name a[aria-expanded=false] i,
+.categories-box .categories-name a[aria-expanded=false] svg {
+  transform: rotate(-90deg);
+}
+.categories-box .collapse:not(:last-child) {
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.categories-box .collapse .sections li {
+  padding: 5px 5px;
+}
+.categories-box .collapse .sections li label {
+  color: #444;
+  font-size: 13px;
+}
+
+.box-department {
+  position: relative;
+  height: 270px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+.box-department::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.28), rgba(206, 207, 207, 0.09), rgba(255, 255, 255, 0.19), rgba(0, 0, 0, 0.4784313725), rgba(0, 0, 0, 0.768627451));
+}
+.box-department img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 0.4s;
+}
+.box-department .added {
+  position: absolute;
+  top: 10;
+  left: 10px;
+  background-color: #DAC8FF;
+  color: #000;
+  padding: 4px 16px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  z-index: 2;
+}
+.box-department .name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 87%;
+  z-index: 2;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+}
+@media (min-width: 992px) {
+  .box-department .name {
+    font-size: 18px;
+  }
+}
+.box-department:hover img {
+  transform: scale(1.1) rotate(2deg);
+}
+
 .box-section {
   background-color: #D8EDEF;
   min-height: 100vh;
@@ -330,6 +424,21 @@
   background-color: #f578b6;
 }
 
+input:focus::-moz-placeholder {
+  opacity: 0;
+  transform: 0.3s;
+}
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  transform: 0.3s;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+  transform: 0.3s;
+}
+
 .main-inp {
   position: relative;
   border: none;
@@ -432,9 +541,84 @@
   background-color: white !important;
 }
 .bg-inp-check:checked {
-  background-color: #0ABAB5 !important;
-  border: 1px solid #0ABAB5;
+  background-color: #0abab5 !important;
+  border: 1px solid #0abab5;
   box-shadow: 0 0 0 0.25rem rgba(10, 186, 180, 0.274);
+}
+
+.main-select {
+  border-color: #e9e9e9;
+  padding: 10px 15px 10px 40px;
+  border-radius: 10px;
+  font-size: 10px;
+  color: #666;
+}
+.main-select.form-select {
+  background-position: left 11px center;
+  background-position-y: 53%;
+  background-size: 9px 10px;
+}
+.main-select.form-select:focus {
+  border-color: #0ABAB5;
+  box-shadow: 0 0 0 0.25rem rgba(10, 186, 181, 0.41);
+}
+
+.search-bar {
+  border: 1px solid #e9e9e9;
+  padding: 10px 20px;
+  border-radius: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.search-bar i,
+.search-bar svg {
+  font-size: 20px;
+  color: #8f8f8f;
+}
+.search-bar input {
+  color: #8f8f8f;
+  display: flex;
+  flex-grow: 1;
+  border: none;
+}
+.search-bar input::-moz-placeholder {
+  font-size: 11px;
+}
+.search-bar input:-ms-input-placeholder {
+  font-size: 11px;
+}
+.search-bar input::placeholder {
+  font-size: 11px;
+}
+
+.pagination .page-item:first-child a,
+.pagination .page-item:last-child a {
+  border: none;
+}
+.pagination .page-item:last-child a {
+  color: #010b14;
+}
+.pagination .page-item {
+  margin: 0 5px;
+}
+.pagination .page-item .page-link {
+  border-color: #FFF181;
+  color: #000;
+  padding: 5px 8px;
+}
+.pagination .page-item .page-link:hover {
+  background-color: #f1f3f5;
+}
+.pagination .page-item .page-link.active {
+  background-color: #FFF181;
+  border-color: #FFF181;
+  color: #000;
+}
+.pagination .page-item .page-link.active:hover {
+  border-color: #FFF181 !important;
 }
 
 * {
