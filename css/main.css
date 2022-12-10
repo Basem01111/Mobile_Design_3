@@ -428,6 +428,7 @@ input:focus::placeholder {
   left: 0;
   height: 62px;
   top: 0;
+  z-index: 100;
   width: 100%;
   background-color: white;
 }
@@ -727,4 +728,79 @@ input:focus::placeholder {
 }
 .your-occasions .box-occasions .content .icon {
   color: #F578B6;
+}
+
+.sections .swiper-wrapper {
+  height: -webkit-fit-content !important;
+  height: -moz-fit-content !important;
+  height: fit-content !important;
+}
+.sections .swiper-wrapper .box-sections {
+  display: block;
+  position: relative;
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  width: 100%;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.sections .swiper-wrapper .box-sections::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.72)), to(transparent));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.72), transparent);
+  z-index: -1;
+}
+.sections .swiper-wrapper .box-sections .bg-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  left: 0;
+  top: 0;
+  z-index: -2;
+  transition: 300ms;
+  -webkit-transition: 300ms;
+  -moz-transition: 300ms;
+  -ms-transition: 300ms;
+  -o-transition: 300ms;
+}
+.sections .swiper-wrapper .box-sections:focus .bg-img {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.sections .swiper-wrapper .box-sections .badge-box {
+  margin-right: auto;
+  background-color: #DAC8FF;
+  font-size: 12px;
+  padding: 0.3rem 1.5rem;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.sections .swiper-wrapper .box-sections .title {
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
 }
