@@ -40,7 +40,9 @@
                 margin-bottom: 15px;
                 img {
                   margin-bottom: 10px;
-                  @include circle(75px, 75px)
+                  @include circle(75px, 75px);
+                  object-fit: cover;
+                  
                 }
                 h5, h6 {
                   font-weight: 700;
