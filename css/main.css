@@ -423,6 +423,12 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
+.box-border .text p {
+  font-size: 13px;
+}
+.box-border .info .icon {
+  color: #f578b6;
+}
 
 .main-inp {
   position: relative;
