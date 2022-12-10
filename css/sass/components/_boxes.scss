@@ -2,6 +2,100 @@
   background-color: $light-mian-color;
   min-height: 100vh;
 }
+
+.box-offer {
+  box-shadow: 0px 4px 10px 0 #00000024;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  .header-box {
+    position: relative;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+    height: 150px;
+    -webkit-border-radius: 15px 15px 0 0;
+    -moz-border-radius: 15px 15px 0 0;
+    -ms-border-radius: 15px 15px 0 0;
+    -o-border-radius: 15px 15px 0 0;
+    .bg-img {
+      z-index: -1;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    .add-favorite {
+      background-color: #f578b6;
+      color: white;
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      font-size: 20px;
+      -o-border-radius: 50%;
+      border: none !important;
+      outline: none !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  .content {
+    padding: 1rem;
+    border: 2px solid #ddd;
+    border-top: none;
+    border-radius: 0 0 15px 15px;
+    -webkit-border-radius: 0 0 15px 15px;
+    -moz-border-radius: 0 0 15px 15px;
+    -ms-border-radius: 0 0 15px 15px;
+    -o-border-radius: 0 0 15px 15px;
+    .main-btn {
+      font-size: 13px !important;
+    }
+    .text {
+      font-size: 13px;
+    }
+    .price {
+      .small-price {
+        font-size: 13px;
+      }
+    }
+    .old-price {
+      color: #a3a3a3;
+      font-size: 13px;
+    }
+    .info-user {
+      .img-user {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border: 2px solid $yellow-color;
+        overflow: hidden;
+        margin: 0 auto;
+        img {
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .name {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
 .stor-box {
   padding: 1rem;
   border-radius: 10px;
@@ -48,7 +142,8 @@
   }
   .btn-holder-more {
     @include flex-center;
-    button, a {
+    button,
+    a {
       font-size: 11px;
       border-radius: 6px;
       padding: 7px 15px;
