@@ -43,3 +43,61 @@
 }
 }
 // End  profile-section 
+
+// Satrt Home Page
+.section-home {
+  padding-top: calc(62px) !important;
+  padding-bottom: calc(65.5px)  !important;
+  .landing-page {
+  background-image: url(../img/landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+  color: white;
+  .title {
+    text-shadow: 0px 1px 10px #0000004d;
+  }
+  .text {
+    text-shadow: 0px 1px 10px #0000004d;
+  }
+  }
+
+}
+.your-occasions {
+  .box-occasions {
+    padding:0 1.5rem;
+    box-shadow: 0px 7px 10px 0 #00000012;
+    border: 2px solid #ddd;
+    border-radius: 15px;
+    height: 151px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .content {
+      width: 100%;
+      .time {
+        .item {
+          padding: 0 0.8rem;
+          text-align: center;
+          color: $mian-color;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          .num {
+            font-size: 31px;
+            font-weight: bold;
+            line-height: 28px;
+          }
+          &:not(:last-child) {
+            border-left: 1px solid #ddd;
+          }
+      }
+      }
+      .icon {
+        color: #F578B6;
+      }
+    }
+  }
+}
+// End Home Page

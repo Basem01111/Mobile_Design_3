@@ -45,6 +45,19 @@
   cursor: pointer;
   -ms-border-radius: 9px;
   -o-border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .main-btn.btn-yellow {
   background-color: #FFF181 !important;
@@ -143,7 +156,6 @@
 
 .lg-title {
   color: #0ABAB5;
-  font-size: 35px;
   font-weight: bold;
 }
 
@@ -649,4 +661,70 @@ input:focus::placeholder {
 }
 .profile-section .list-profile li .link .icon {
   width: 15px;
+}
+
+.section-home {
+  padding-top: 62px !important;
+  padding-bottom: 65.5px !important;
+}
+.section-home .landing-page {
+  background-image: url(../img/landing.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 0;
+  color: white;
+}
+.section-home .landing-page .title {
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3019607843);
+}
+.section-home .landing-page .text {
+  text-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3019607843);
+}
+
+.your-occasions .box-occasions {
+  padding: 0 1.5rem;
+  -webkit-box-shadow: 0px 7px 10px 0 rgba(0, 0, 0, 0.0705882353);
+          box-shadow: 0px 7px 10px 0 rgba(0, 0, 0, 0.0705882353);
+  border: 2px solid #ddd;
+  border-radius: 15px;
+  height: 151px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.your-occasions .box-occasions .content {
+  width: 100%;
+}
+.your-occasions .box-occasions .content .time .item {
+  padding: 0 0.8rem;
+  text-align: center;
+  color: #0ABAB5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.your-occasions .box-occasions .content .time .item .num {
+  font-size: 31px;
+  font-weight: bold;
+  line-height: 28px;
+}
+.your-occasions .box-occasions .content .time .item:not(:last-child) {
+  border-left: 1px solid #ddd;
+}
+.your-occasions .box-occasions .content .icon {
+  color: #F578B6;
 }
