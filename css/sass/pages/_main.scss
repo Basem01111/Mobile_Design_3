@@ -185,3 +185,20 @@
   }
 }
 // End Home Page
+
+// Start invoice-section
+.invoice-section {
+  .info-user {
+    .img {
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      object-fit: cover;
+}
+  }
+}
+// End invoice-section
