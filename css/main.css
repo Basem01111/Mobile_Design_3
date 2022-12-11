@@ -46,6 +46,11 @@
   color: #f578b6;
 }
 
+@media print {
+  .not-print {
+    display: none !important;
+  }
+}
 .main-btn {
   color: white !important;
   background-color: #0ABAB5;
@@ -989,6 +994,30 @@
   margin: 15px 0;
 }
 
+.main-table-border {
+  border: 2px solid #0ABAB5 !important;
+  border-radius: 15px !important;
+  -webkit-border-radius: 15px !important;
+  -moz-border-radius: 15px !important;
+  padding: 0.25rem;
+  -ms-border-radius: 15px !important;
+  -o-border-radius: 15px !important;
+}
+.main-table-border table {
+  margin: 0 !important;
+  border: none !important;
+}
+.main-table-border table thead, .main-table-border table tbody, .main-table-border table tr, .main-table-border table th, .main-table-border table td {
+  text-align: center !important;
+  border: none !important;
+}
+.main-table-border table th, .main-table-border table td {
+  padding: 5px !important;
+}
+.main-table-border table td {
+  font-size: 14px !important;
+}
+
 input:focus::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transform: 0.3s;
@@ -1307,6 +1336,12 @@ input:focus::placeholder {
 .section {
   padding-top: calc(62px + 1rem) !important;
   padding-bottom: calc(65.5px + 1rem) !important;
+}
+@media print {
+  .section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
 }
 
 .login-section .main-inp {

@@ -547,3 +547,27 @@
   gap: 10px;
   margin: 15px 0;
 }
+
+.main-table-border {
+ border: 2px solid $mian-color !important;
+ border-radius: 15px !important;
+ -webkit-border-radius: 15px !important;
+ -moz-border-radius: 15px !important;
+ padding: 0.25rem;
+ -ms-border-radius: 15px !important;
+ -o-border-radius: 15px !important;
+ table {
+  margin: 0 !important;
+  border: none !important;
+  thead,tbody,tr,th,td {
+   text-align: center !important;
+   border: none !important;
+  }
+  th,td {
+   padding: 5px !important;
+  }
+  td {
+   font-size: 14px !important;
+  }
+ }
+}
