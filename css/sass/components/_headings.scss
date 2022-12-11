@@ -22,3 +22,9 @@
   -o-border-radius: 50px;
 }
 
+.circle-badge-pink {
+  @include circle(18px, 18px);
+  @include flex-center;
+  color: $white-color;
+  background-color: $pink-color;
+}

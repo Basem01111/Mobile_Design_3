@@ -208,6 +208,17 @@
   -o-border-radius: 50px;
 }
 
+.circle-badge-pink {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background-color: #f578b6;
+}
+
 .box-section {
   background-color: #D8EDEF;
   min-height: 100vh;
@@ -549,14 +560,159 @@
   align-items: center;
   justify-content: space-between;
 }
-.box-services .text-content .more-info .mony i, .box-services .text-content .more-info .mony svg, .box-services .text-content .more-info .location i, .box-services .text-content .more-info .location svg {
+.box-services .text-content .more-info .mony i,
+.box-services .text-content .more-info .mony svg,
+.box-services .text-content .more-info .location i,
+.box-services .text-content .more-info .location svg {
   color: #f578b6;
   font-size: 10px;
   margin-left: 5px;
 }
-.box-services .text-content .more-info .mony span, .box-services .text-content .more-info .location span {
-  font-size: 11px;
+.box-services .text-content .more-info .mony span,
+.box-services .text-content .more-info .location span {
+  font-size: 10px;
   color: #333;
+}
+
+.box-chat {
+  background-color: #e5f3f4;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.box-chat .head-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+.box-chat .head-box .user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.box-chat .head-box .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.box-chat .head-box .user p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 15px;
+}
+.box-chat .head-box .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.box-chat .head-box .date span {
+  color: #777;
+  font-weight: 400;
+  font-size: 13px;
+}
+.box-chat .head-box .date .circle {
+  color: #d1d1d1;
+}
+.box-chat .status {
+  color: #0ABAB5;
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.box-chat .massage {
+  color: #555;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.chatting-box {
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #0ABAB5;
+  border-radius: 12px;
+}
+.chatting-box .user-bar {
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #e9e9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 9px;
+}
+.chatting-box .user-bar img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.chatting-box .user-bar p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 18px;
+}
+.chatting-box .chat-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 25px;
+  margin-right: auto;
+}
+.chatting-box .chat-content.speak {
+  margin-left: auto;
+  margin-right: 0;
+}
+.chatting-box .chat-content.speak .chat-head-info {
+  flex-direction: row-reverse;
+}
+.chatting-box .chat-content.speak .chat-head-info .about-user {
+  flex-direction: row-reverse;
+}
+.chatting-box .chat-content.speak .message-content {
+  background-color: #eaeff4;
+  color: #444;
+}
+.chatting-box .chat-content .chat-head-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 7px;
+}
+.chatting-box .chat-content .chat-head-info .about-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-start;
+  gap: 7px;
+}
+.chatting-box .chat-content .chat-head-info .about-user img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.chatting-box .chat-content .chat-head-info .about-user p {
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 13px;
+}
+.chatting-box .chat-content .chat-head-info p.time {
+  margin-bottom: 0;
+  font-size: 11px;
+  font-weight: 600;
+  color: #a2aab6;
+}
+.chatting-box .chat-content .message-content {
+  background-color: #0ABAB5;
+  color: #fff;
+  border-radius: 6px;
+  padding: 15px 12px;
+  font-size: 12px;
 }
 
 input:focus::-moz-placeholder {
@@ -961,7 +1117,7 @@ input:focus::placeholder {
   height: 65.5px;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 11;
   background-color: #fff;
   transition: 0.4s;
   border-bottom: 1px solid #efeff0;
