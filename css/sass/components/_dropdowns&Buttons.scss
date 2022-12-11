@@ -22,6 +22,10 @@
     background-color: $light-grey-color !important;
     color: $mian-text-color !important;
   }
+  &.btn-alt {
+    background-color: $alt-color !important;
+    color: $white-color !important;
+  }
 }
 .btn-inp-check {
   background-color: white;
@@ -118,10 +122,19 @@
   border: none !important;
   outline: none !important;
   text-align: center !important;
-  color:$mian-text-color !important;
+  color: $mian-text-color !important;
   background-color: transparent !important;
   &.active {
     background-color: $light-mian-color2 !important;
     color: $mian-color !important;
   }
+}
+
+.btn-quantity {
+  background-color: $alt-color;
+  color: $white-color;
+  border-radius: 5px;
+  font-size: 16px;
+  padding: 0px 5px;
+  line-height: 18.90px;
 }
