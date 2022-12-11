@@ -15,6 +15,10 @@
 .fs-12 {
   font-size: 12px;
 }
+.fw-600 {
+  font-weight: 600;
+}
+
 .w-fit {
   width: fit-content;
 }
@@ -26,4 +30,8 @@
 }
 .gray-text {
   color: $gray-text;
+}
+
+.pink-color {
+  color: $pink-color;
 }

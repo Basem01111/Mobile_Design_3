@@ -20,6 +20,10 @@
   font-size: 12px;
 }
 
+.fw-600 {
+  font-weight: 600;
+}
+
 .w-fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -36,6 +40,10 @@
 
 .gray-text {
   color: #a9a8a8;
+}
+
+.pink-color {
+  color: #f578b6;
 }
 
 .main-btn {
@@ -385,7 +393,7 @@
      object-fit: cover;
 }
 .box-border .text p {
-  font-size: 13px;
+  font-size: 12px;
 }
 .box-border .info .icon {
   color: #f578b6;
