@@ -638,3 +638,46 @@
     }
   }
 }
+.notifications-list {
+  > li {
+      .notification_holder {
+          background-color: white;
+          font-size: 15px;
+          z-index: 1;
+          position: relative;
+          border-style: none none none;
+          border-radius: 2px;
+          border-bottom: 1px solid #eee;
+          padding: 14px 0;
+          .notification_text {
+              display: flex;
+              gap: 10px;
+              align-items: center;
+              .icon-alert {
+                  font-size: 40px;
+                  color:$alt-color;
+              }
+              .image_holder {
+                  width: 70px;
+                  height: 100%;
+                  > img {
+                      width: 100%;
+                      height: 100%;
+                      border-radius: 50%;
+                  }
+              }
+              .date-notification {
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-start;
+                  font-size: 11px;
+                  color: #bdbcbc;
+                  gap: 5px;
+              }
+              .content {
+                  color: $mian-text-color;
+              }
+          }
+      }
+  }
+}
