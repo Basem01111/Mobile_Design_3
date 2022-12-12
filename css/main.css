@@ -50,6 +50,10 @@
   color: #a9a8a8;
 }
 
+.text-link {
+  color: #0d6efd;
+}
+
 .pink-color {
   color: #f578b6;
 }
@@ -73,6 +77,10 @@
 }
 .pay-option.lg {
   margin-top: 475px;
+}
+
+.bg-grey {
+  background-color: #F5F5F5;
 }
 
 .main-table {
