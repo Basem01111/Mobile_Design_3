@@ -37,6 +37,22 @@ input {
       color: $mian-text-color;
     }
   }
+  select {
+    width: 100%;
+    border: none !important;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    padding: 10.1px;
+    margin-top: 7px;
+    border-radius: 12px;
+  }
+  textarea {
+    &.won {
+      margin-top: 7px !important;
+      border: solid 1px #a9a9a9 !important;
+    }
+  }
 }
 .inp-check {
   position: relative;

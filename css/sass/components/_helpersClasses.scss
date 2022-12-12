@@ -18,9 +18,11 @@
 .fw-600 {
   font-weight: 600;
 }
-
 .w-fit {
   width: fit-content;
+}
+.w-150px {
+  width: 150px;
 }
 .bottom-line {
   text-decoration: underline;
@@ -38,5 +40,40 @@
 @media print {
   .not-print {
     display: none !important;
+  }
+}
+
+// Tables
+// Main Table
+.main-table {
+  width: 100%;
+  border-radius: 7px;
+  border: none !important;
+  text-align: center;
+  border: 1px solid $trouble-d !important;
+  * {
+    border: none !important;
+  }
+  tr {
+    border: 1px solid $trouble-d !important;
+    th {
+      background-color: $light-greey;
+      color: $text-dark-light;
+      font-size: 10px;
+      font-weight: bold;
+      white-space: nowrap;
+      // padding: 10px;
+      padding: 7px;
+      &.sec-th-style {
+        border: 2px solid $black-color !important;
+      }
+    }
+    td {
+      background-color: $white-color;
+      font-size: 11px;
+      // padding: 10px;
+      padding: 7px;
+      white-space: nowrap;
+    }
   }
 }
