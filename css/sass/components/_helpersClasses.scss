@@ -33,7 +33,9 @@
 .gray-text {
   color: $gray-text;
 }
-
+.text-link {
+  color: #0d6efd;
+}
 .pink-color {
   color: $pink-color;
 }
@@ -43,6 +45,9 @@
   }
 }
 
+.bg-grey {
+  background-color: #F5F5F5;
+}
 // Tables
 // Main Table
 .main-table {

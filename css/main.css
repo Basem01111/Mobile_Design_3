@@ -46,6 +46,10 @@
   color: #a9a8a8;
 }
 
+.text-link {
+  color: #0d6efd;
+}
+
 .pink-color {
   color: #f578b6;
 }
@@ -55,6 +59,10 @@
     display: none !important;
   }
 }
+.bg-grey {
+  background-color: #F5F5F5;
+}
+
 .main-table {
   width: 100%;
   border-radius: 7px;
