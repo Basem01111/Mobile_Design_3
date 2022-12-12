@@ -138,11 +138,11 @@
       </div>
     </nav>
     <section class="section box-section coordinator-section py-4">
-      <div class="container-md  my-3">
+      <div class="container-md my-3">
         <div class="d-flex align-items-center justify-content-between">
           <h3 class="lg-title">محفظتي</h3>
           <button
-            class="main-btn btn-yellow"
+            class="main-btn bg-success"
             data-bs-toggle="modal"
             data-bs-target="#addMonyModal"
           >
@@ -292,20 +292,6 @@
                             >* رسوم عملية الدفع تقتطعها بوابات الدفع الإلكترونية
                             مثل PayPal والبطاقات الائتمانية.
                           </small>
-                          <hr class="won-hr"/>
-                          <div
-                            class="pay-holder d-flex align-items-center justify-content-between"
-                          >
-                            <button type="submit" class="main-btn bg-success">
-                              <i class="fa-solid fa-sack-dollar"></i> شحن الرصيد
-                            </button>
-                            <div class="d-flex align-items-center gap-1">
-                              <div class="circle-lock bg-success">
-                                <i class="fa-solid fa-lock"></i>
-                              </div>
-                              <span class="text-success"> ادفع بأمان، اتصالك مشفر</span>
-                            </div>
-                          </div>
                         </form>
                       </div>
                     </div>
@@ -315,48 +301,37 @@
                       role="tabpanel"
                       aria-labelledby="nav-paypal-tab"
                     >
-                    <div class="container-md py-2">
-                      <form action="">
-                        <div class="row g-2">
-                          <div class="col-12 col-md-4">
-                            <label for="" class="mb-2">
-                              المبلغ
-                              <span class="text-danger">*</span>
-                            </label>
-                            <div class="input-group">
-                              <input type="number" class="form-control" />
-                              <span class="input-group-text">$</span>
+                      <div class="container-md py-2">
+                        <form action="">
+                          <div class="row g-2">
+                            <div class="col-12 col-md-4">
+                              <label for="" class="mb-2">
+                                المبلغ
+                                <span class="text-danger">*</span>
+                              </label>
+                              <div class="input-group">
+                                <input type="number" class="form-control" />
+                                <span class="input-group-text">$</span>
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <hr class="won-hr" />
-                        <p class="mb-2">
-                          المبلغ النهائي بعد اضافة رسوم إجرائية بنسبة 2.75%
-                          على عملية الدفع *
-                        </p>
-                        <div class="mony text-center mb-4">
-                          <h4 class="text-success mb-0">
-                            <span class="fs-26px">0</span>
-                            <i class="fa-solid fa-dollar-sign"></i>
-                          </h4>
-                        </div>
-                        <small
-                          >* رسوم عملية الدفع تقتطعها بوابات الدفع الإلكترونية
-                          مثل PayPal والبطاقات الائتمانية.
-                        </small>
-                        <div class="pay-holder pay-option d-flex align-items-center justify-content-between">
-                          <button type="submit" class="main-btn bg-success">
-                            <i class="fa-solid fa-sack-dollar"></i> شحن الرصيد
-                          </button>
-                          <div class="d-flex align-items-center gap-1">
-                            <div class="circle-lock bg-success">
-                              <i class="fa-solid fa-lock"></i>
-                            </div>
-                            <span class="text-success"> ادفع بأمان، اتصالك مشفر</span>
+                          <hr class="won-hr" />
+                          <p class="mb-2">
+                            المبلغ النهائي بعد اضافة رسوم إجرائية بنسبة 2.75%
+                            على عملية الدفع *
+                          </p>
+                          <div class="mony text-center mb-4">
+                            <h4 class="text-success mb-0">
+                              <span class="fs-26px">0</span>
+                              <i class="fa-solid fa-dollar-sign"></i>
+                            </h4>
                           </div>
-                        </div>
-                      </form>
-                    </div>
+                          <small
+                            >* رسوم عملية الدفع تقتطعها بوابات الدفع الإلكترونية
+                            مثل PayPal والبطاقات الائتمانية.
+                          </small>
+                        </form>
+                      </div>
                     </div>
                     <div
                       class="tab-pane fade"
@@ -364,34 +339,36 @@
                       role="tabpanel"
                       aria-labelledby="nav-tags-tab"
                     >
-                    <div class="container-md py-2">
-                      <form action="">
-                        <div class="row g-2">
-                          <div class="col-12 col-md-4">
-                            <label for="" class="mb-2">
-                              رمز القسيمة
-                              <span class="text-danger">*</span>
-                            </label>
-                            <div class="input-group">
-                              <input type="number" class="form-control" />
+                      <div class="container-md py-2">
+                        <form action="">
+                          <div class="row g-2">
+                            <div class="col-12 col-md-4">
+                              <label for="" class="mb-2">
+                                رمز القسيمة
+                                <span class="text-danger">*</span>
+                              </label>
+                              <div class="input-group">
+                                <input type="number" class="form-control" />
+                              </div>
                             </div>
                           </div>
-                        </div>
-                        <div
-                          class="pay-holder pay-option lg d-flex align-items-center justify-content-between"
-                        >
-                          <button type="submit" class="main-btn bg-success">
-                            <i class="fa-solid fa-sack-dollar"></i> شحن الرصيد
-                          </button>
-                          <div class="d-flex align-items-center gap-1">
-                            <div class="circle-lock bg-success">
-                              <i class="fa-solid fa-lock"></i>
-                            </div>
-                            <span class="text-success"> ادفع بأمان، اتصالك مشفر</span>
-                          </div>
-                        </div>
-                      </form>
+                        </form>
+                      </div>
                     </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div
+                    class="pay-holder w-100 d-flex align-items-center justify-content-between"
+                  >
+                    <button type="submit" class="main-btn bg-success">
+                      <i class="fa-solid fa-sack-dollar"></i> شحن الرصيد
+                    </button>
+                    <div class="d-flex align-items-center gap-1">
+                      <div class="circle-lock bg-success">
+                        <i class="fa-solid fa-lock"></i>
+                      </div>
+                      <span class="text-success"> ادفع بأمان، اتصالك مشفر</span>
                     </div>
                   </div>
                 </div>
@@ -403,24 +380,48 @@
       <div class="container-md bg-white mt-5">
         <div class="box-stock">
           <div class="row g-3">
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="كامل الرصيد الموجود في حسابك الآن، يتضمن الأرباح والرصيد المعلّق أيضاً.">
-                <h5>الرصيد الكلي</h5>
-                <div class="text-beta "><span dir="rtl">$0.00</span></div>
+            <div
+              class="col-md-3 col-sm-6 col-xs-12 text-center"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="كامل الرصيد الموجود في حسابك الآن، يتضمن الأرباح والرصيد المعلّق أيضاً."
+            >
+              <h5>الرصيد الكلي</h5>
+              <div class="text-beta"><span dir="rtl">$0.00</span></div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center" data-toggle="tooltip" data-html="true" data-placement="bottom" title="" data-original-title="يتضمن ميزانية مشاريعك قيد التنفيذ و أي مبلغ  طلبت سحبه ولا زال قيد التحويل، بالإضافة لأرباحك في 14 يوما الأخيرة.">
-                <h5>الرصيد المعلق</h5>
-                <div class="text-beta"><span dir="rtl">$0.00</span></div>
-
+            <div
+              class="col-md-3 col-sm-6 col-xs-12 text-center"
+              data-toggle="tooltip"
+              data-html="true"
+              data-placement="bottom"
+              title=""
+              data-original-title="يتضمن ميزانية مشاريعك قيد التنفيذ و أي مبلغ  طلبت سحبه ولا زال قيد التحويل، بالإضافة لأرباحك في 14 يوما الأخيرة."
+            >
+              <h5>الرصيد المعلق</h5>
+              <div class="text-beta"><span dir="rtl">$0.00</span></div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="الرصيد الذي يمكنك استخدامه لفتح مشاريع جديدة في مستقل.">
-                <h5>الرصيد المتاح</h5>
-                <div class="text-beta"><span dir="rtl">$0.00</span></div>
+            <div
+              class="col-md-3 col-sm-6 col-xs-12 text-center"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title="الرصيد الذي يمكنك استخدامه لفتح مشاريع جديدة في مستقل."
+            >
+              <h5>الرصيد المتاح</h5>
+              <div class="text-beta"><span dir="rtl">$0.00</span></div>
             </div>
-            <div class="col-md-3 col-sm-6 col-xs-12 text-center" data-toggle="tooltip" data-placement="bottom" title="" data-original-title=" المبلغ المتبقي من الأرباح التي حققتها في مستقل ويمكنك سحبها الآن.">
-                <h5>الرصيد القابل للسحب</h5>
-                <div class="text-beta"><span dir="rtl">$0.00</span></div>
+            <div
+              class="col-md-3 col-sm-6 col-xs-12 text-center"
+              data-toggle="tooltip"
+              data-placement="bottom"
+              title=""
+              data-original-title=" المبلغ المتبقي من الأرباح التي حققتها في مستقل ويمكنك سحبها الآن."
+            >
+              <h5>الرصيد القابل للسحب</h5>
+              <div class="text-beta"><span dir="rtl">$0.00</span></div>
             </div>
-        </div>
+          </div>
         </div>
       </div>
     </section>

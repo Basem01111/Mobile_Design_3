@@ -11,7 +11,6 @@
 .min-height {
   min-height: 100vh;
 }
-
 .fs-12 {
   font-size: 12px;
 }
@@ -47,23 +46,12 @@
     display: none !important;
   }
 }
-
 .won-hr {
   margin-top: 26px;
   margin-bottom: 26px;
   border: 0;
   border-top: 1px solid #aba9a9;
 }
-
-.pay-option {
-  border-top: 1px solid #dfdbdb;
-  padding-top: 25px;
-  margin-top: 285px;
-  &.lg {
-    margin-top: 475px;
-  }
-}
-
 .bg-grey {
   background-color: #F5F5F5;
 }
