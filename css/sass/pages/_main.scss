@@ -202,3 +202,19 @@
   }
 }
 // End invoice-section
+// Start show-order-section
+.show-order-section {
+  .info-user-order {
+    .img-user {
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+}
+  }
+}
+// End how-order-section
