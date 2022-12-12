@@ -1223,7 +1223,7 @@
           align-items: center;
 }
 .notifications-list > li .notification_holder .notification_text .icon-alert {
-  font-size: 40px;
+  font-size: 30px;
   color: #DAC8FF;
 }
 .notifications-list > li .notification_holder .notification_text .image_holder {
