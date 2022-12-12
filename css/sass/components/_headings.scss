@@ -28,3 +28,9 @@
   color: $white-color;
   background-color: $pink-color;
 }
+
+.circle-lock {
+  @include circle(30px, 30px);
+  @include flex-center;
+  color: $white-color;
+}

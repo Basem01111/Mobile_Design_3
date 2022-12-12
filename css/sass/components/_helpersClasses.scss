@@ -15,6 +15,9 @@
 .fs-12 {
   font-size: 12px;
 }
+.fs-26px {
+  font-size: 26px;
+}
 .fw-600 {
   font-weight: 600;
 }
@@ -40,6 +43,22 @@
 @media print {
   .not-print {
     display: none !important;
+  }
+}
+
+.won-hr {
+  margin-top: 26px;
+  margin-bottom: 26px;
+  border: 0;
+  border-top: 1px solid #aba9a9;
+}
+
+.pay-option {
+  border-top: 1px solid #dfdbdb;
+  padding-top: 25px;
+  margin-top: 285px;
+  &.lg {
+    margin-top: 475px;
   }
 }
 
