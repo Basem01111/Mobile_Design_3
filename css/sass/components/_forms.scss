@@ -91,8 +91,8 @@ input {
   }
   &:checked::before {
     content: "✓";
-    background-color: $mian-color;
-    border-color: $mian-color;
+    background-color: $main-color;
+    border-color: $main-color;
   }
 }
 .main-textarea {
@@ -128,7 +128,7 @@ input {
     background-position-y: 53%;
     background-size: 9px 10px;
     &:focus {
-      border-color: $mian-color;
+      border-color: $main-color;
       box-shadow: 0 0 0 0.25rem rgb(10 186 181 / 41%);
     }
   }

@@ -105,6 +105,43 @@
   white-space: nowrap;
 }
 
+.text-badge {
+  color: white !important;
+  background-color: #0ABAB5;
+  padding: 0.5rem 1rem;
+  border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  outline: 0 !important;
+  -ms-border-radius: 9px;
+  -o-border-radius: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.text-badge.badge-yellow {
+  background-color: #FFF181 !important;
+  color: #010B14 !important;
+}
+.text-badge.badge-light-grey {
+  background-color: #CFE1E3 !important;
+  color: #010B14 !important;
+}
+.text-badge.badge-alt {
+  background-color: #DAC8FF !important;
+  color: #fff !important;
+}
+
 .main-btn {
   color: white !important;
   background-color: #0ABAB5;
@@ -1253,6 +1290,66 @@
   color: #010B14;
 }
 
+.box-tickets .ticket {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 11px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #0ABAB5;
+  border-radius: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.box-tickets .ticket .header-box {
+  position: relative;
+  padding-bottom: 11px;
+}
+.box-tickets .ticket .header-box .date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+  letter-spacing: 0px;
+  font-weight: bold;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #0ABAB5;
+}
+.box-tickets .ticket .header-box .date i,
+.box-tickets .ticket .header-box .date svg {
+  margin: 0 7px;
+}
+.box-tickets .ticket .header-box::before {
+  content: "";
+  position: absolute;
+  background-color: #0ABAB5;
+  width: 100%;
+  opacity: 0.5;
+  border-radius: 50px;
+  left: 0;
+  height: 3px;
+  top: 100%;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.box-tickets .ticket .text {
+  font-size: 14px;
+  color: #666;
+  margin: 11px 0;
+}
+
 input:focus::-webkit-input-placeholder {
   opacity: 0;
   -webkit-transform: 0.3s;
@@ -2073,4 +2170,38 @@ input:focus::placeholder {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+.artical-section .box-text {
+  width: 100%;
+  background-color: white;
+  border-radius: 6px;
+  border: 1px solid #0ABAB5;
+  padding: 15px;
+}
+.artical-section .box-text .image-holder {
+  height: 250px;
+  width: 50%;
+  margin: 0 auto 30px;
+  height: 250px;
+  width: 500px;
+  max-width: 100%;
+  margin: 0 auto 30px;
+}
+.artical-section .box-text .image-holder img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.artical-section .box-text h1 {
+  color: #0ABAB5;
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 13px;
+  margin-top: 0;
+}
+.artical-section .box-text h1 p {
+  color: #fff;
+  font-size: 16px;
 }

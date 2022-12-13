@@ -48,12 +48,12 @@
                   font-weight: 700;
                 }
                 h6 {
-                  color: $mian-color;
+                  color: $main-color;
                 }
               }
               .nav-link {
                 &.active {
-                  background-color: $mian-color;
+                  background-color: $main-color;
                   color: $white-color;
                   margin-bottom: 10px;
                 }
@@ -134,7 +134,7 @@
           }
           &.active {
             .nav-icon, .nav-name {
-              color: $mian-color;
+              color: $main-color;
             }
           }
           .nav-name {
@@ -142,7 +142,7 @@
             font-size: 13px;
           }
           &:hover {
-            color: $mian-color;
+            color: $main-color;
           }
         }
       }

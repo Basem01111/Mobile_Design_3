@@ -31,3 +31,9 @@ if (document.querySelector(".btn-inp-check .inp")) {
     })
   })
 }
+
+// make modal Bootstrap popup show without click
+if(document.querySelector("#popup_show")) {
+  let myModal = new bootstrap.Modal(document.getElementById("popup_show"));
+  myModal.show();
+}
