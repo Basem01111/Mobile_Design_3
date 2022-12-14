@@ -164,7 +164,7 @@
   border-radius: 5px;
   font-size: 16px;
   padding: 0px 5px;
-  line-height: 18.90px;
+  line-height: 18.9px;
 }
 
 .wallet-tap {
@@ -181,9 +181,41 @@
     border-radius: 0 !important;
     color: #314459 !important;
     background-color: #f0f0f0;
-    i, svg {
+    i,
+    svg {
       color: #314459 !important;
       font-size: 14px;
+    }
+  }
+}
+
+.btn-sliders {
+  border: 0.5px solid #afb1b6a6;
+  padding: 6px 10px;
+  background-color: transparent;
+  color: #afb1b6;
+  font-size: 14px;
+}
+
+.btn-close {
+  &.transaction {
+    background-image: none !important;
+    @include flex-center;
+    gap: 5px;
+    width: fit-content;
+    height: fit-content;
+    color: $black-color !important;
+    opacity: 1;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+    i, svg {
+      font-size: 18px;
+    }
+    span {
+      font-size: 15px;
+    }
+    &:focus {
+      box-shadow: none !important;
     }
   }
 }

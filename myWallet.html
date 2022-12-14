@@ -138,15 +138,15 @@
       </div>
     </nav>
     <section class="section box-section coordinator-section py-4">
-      <div class="container-md my-3">
+      <div class="container-md mt-3">
         <div class="d-flex align-items-center justify-content-between">
-          <h3 class="lg-title">محفظتي</h3>
+          <h3 class="lg-title mb-0">محفظتي</h3>
           <button
             class="main-btn bg-success"
             data-bs-toggle="modal"
-            data-bs-target="#addMonyModal"
-          >
-            <i class="fa-solid fa-sack-dollar"></i> شحن الرصيد
+            data-bs-target="#addMonyModal">
+            <i class="fa-solid fa-sack-dollar"></i> 
+            شحن الرصيد
           </button>
           <!-- Add Mony Modal -->
           <div
@@ -377,34 +377,158 @@
           </div>
         </div>
       </div>
-      <div class="container-md mt-5">
-        <div class="bg-grey py-3 mb-3">
-          <div class="row text-center row-gap-24 ">
-           <div class="col-6">
-               <p class="title mb-0">الرصيد الكلي</p>
-               <h5 class="content mb-0"><span>$25.00</span></h5>
-           </div>
-   
-           <div class="col-6">
-               <p class="title mb-0"> الرصيد المعلق
-              </p>
-               <h5 class="content mb-0"> <span>$25.00</span></h5>
-           </div>
-   
-           <div class="col-6 ">
-               <p class="title mb-0">الرصيد المتاح
-              </p>
-               <h5 class="content mb-0"> <span>$25.00</span></h5>
-           </div>
-           <div class="col-6 ">
-               <p class="title mb-0">الرصيد القابل للسحب
+      <div class="container-md mt-4">
+        <div class="bg-grey py-3 mb-4">
+          <div class="row text-center row-gap-24">
+            <div class="col-12 col-md-6">
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="كامل الرصيد الموجود في حسابك الآن، يتضمن الأرباح والرصيد المعلّق أيضاً."
+                data-bs-custom-class="wallet-tooltip"
+              >
+                <p class="title mb-0">الرصيد الكلي</p>
+                <h5 class="content mb-0"><span>$25.00</span></h5>
+              </div>
+            </div>
 
-              </p>
-               <h5 class="content mb-0"> <span>$25.00</span></h5>
-           </div>
-   
+            <div class="col-12 col-md-6">
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="يتضمن ميزانية مشاريعك قيد التنفيذ و أي مبلغ  طلبت سحبه ولا زال قيد التحويل، بالإضافة لأرباحك في 14 يوما الأخيرة."
+                data-bs-custom-class="wallet-tooltip"
+              >
+                <p class="title mb-0">الرصيد المعلق</p>
+                <h5 class="content mb-0"><span>$25.00</span></h5>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title="الرصيد الذي يمكنك استخدامه لفتح مشاريع جديدة في فرح."
+                data-bs-custom-class="wallet-tooltip">
+              <p class="title mb-0">الرصيد المتاح</p>
+              <h5 class="content mb-0"><span>$25.00</span></h5>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6">
+              <div
+                data-bs-toggle="tooltip"
+                data-bs-placement="bottom"
+                data-bs-title=" المبلغ المتبقي من الأرباح التي حققتها في فرح ويمكنك سحبها الآن."
+                data-bs-custom-class="wallet-tooltip"
+              >
+                <p class="title mb-0">الرصيد القابل للسحب</p>
+                <h5 class="content mb-0"><span>$25.00</span></h5>
+              </div>
+            </div>
           </div>
-         </div>
+        </div>
+        <div class="d-flex align-items-center justify-content-between">
+          <h6 class="lg-title mb-0 fw-600">المعاملات المالية</h6>
+          <button
+            class="btn-sliders"
+            data-bs-toggle="modal"
+            data-bs-target="#financialTransactionsModal">
+            <i class="fa fa-sliders"></i>
+          </button>
+          <!-- Financial Transactions Modal -->
+          <div
+            class="modal fade"
+            id="financialTransactionsModal"
+            aria-labelledby="financialTransactionsModal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                  type="button"
+                    class="btn-close ms-0 me-auto transaction"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"><i class="fa fa fa-chevron-right"></i> <span>عودة</span></button>
+                    <h6 class="modal-title  m-0" id="financialTransactionsModal">
+                      عرض النتائج
+                    </h6>
+                  </div>
+                <div class="modal-body">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <p class="mb-3 fs-6 fw-600">الفترة</p>
+                      <div class="inputs-holder">
+                        <div class="from">
+                          <span class="value">من</span>
+                          <input type="date" id="" name="" class="">
+                        </div>
+                        <div class="to">
+                          <span class="value">الي</span>
+                          <input type="date" id="" name="" class="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <p class="mb-3 fs-6 fw-600">نوع المعاملة</p>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault1">
+                        <label class="form-check-label" for="flexCheckDefault1">
+                          إيداع
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault2">
+                        <label class="form-check-label" for="flexCheckDefault2">
+                          رسوم
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault3">
+                        <label class="form-check-label" for="flexCheckDefault3">
+                          إنهاء مشروع
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault4">
+                        <label class="form-check-label" for="flexCheckDefault4">
+                          إعادة مال
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault5">
+                        <label class="form-check-label" for="flexCheckDefault5">
+                          سحب الأرباح
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault6">
+                        <label class="form-check-label" for="flexCheckDefault6">
+                          تصحيح صفقه
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault7">
+                        <label class="form-check-label" for="flexCheckDefault7">
+                          إلغاء صفقه
+                        </label>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault8">
+                        <label class="form-check-label" for="flexCheckDefault8">
+                          عروض اضافية
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg-grey py-3 mt-4">
+          <p class="text-center mb-0">لا يوجد أي معاملات مالية.</p>
+        </div>
       </div>
     </section>
     <header class="header not-print" id="header">

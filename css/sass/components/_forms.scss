@@ -189,3 +189,28 @@ input {
     }
   }
 }
+
+.inputs-holder {
+  @include flex-between;
+  justify-content: space-around;
+  .from,
+  .to {
+    position: relative;
+    background-color: #fafafa;
+    color: #adb5bd;
+    opacity: 1;
+    height: 30px;
+    width: 150px;
+    line-height: 30px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    @include flex-center;
+    input {
+      position: absolute;
+      width: 13%;
+      padding: 16px 73px;
+      height: 100%;
+      opacity: 0;
+    }
+  }
+}
