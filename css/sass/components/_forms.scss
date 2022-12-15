@@ -92,7 +92,12 @@ input {
   &:checked::before {
     content: "✓";
     background-color: $main-color;
-    border-color: $main-color;
+    border-color: $main-color !important;
+  }
+  &.form-check-input {
+    &::before {
+      border: 1px solid rgba(0, 0, 0, 0.25);
+    }
   }
 }
 .main-textarea {
@@ -211,6 +216,59 @@ input {
       padding: 16px 73px;
       height: 100%;
       opacity: 0;
+    }
+  }
+}
+
+.filter {
+  @include flex-center;
+  justify-content: flex-start;
+  gap: 7px;
+  margin-right: 4px;
+  .filter-label,
+  .icon-filter {
+    font-size: 16px;
+    color: #777;
+  }
+}
+
+.select-filter {
+  .selectize-input {
+    .item {
+      background: $main-color !important;
+      border: 1px solid $main-color !important;
+      margin: 3px !important;
+      padding: 2px 6px 2px 0px !important;
+      font-size: 14px !important;
+      .remove {
+        margin-left: 0px !important;
+        margin-right: 6px !important;
+        border-left: none;
+        border-right: 1px solid #048f8b;
+        line-height: 14px;
+        font-size: 17px;
+      }
+    }
+  }
+}
+
+.star-bar {
+  @include flex-between;
+  .starts {
+    i,svg {
+      font-size: 21px;
+      color: #e0e0e0;
+      cursor: pointer;
+      &.gold {
+        color: #ffa200;
+      }
+    }
+  }
+  .del {
+    i,svg {
+      padding-left: 5px;
+      font-size: 21px;
+      color: #e0e0e0;
     }
   }
 }

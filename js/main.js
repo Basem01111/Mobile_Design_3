@@ -41,3 +41,15 @@ if(document.querySelector("#popup_show")) {
 // initialize bootstrap tooltips
 const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
 const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+
+$('#filter-option').selectize({
+  plugins: ["remove_button"],
+  delimiter: ",",
+  persist: false,
+  create: function (input) {
+    return {
+        value: input,
+        text: input,
+    };
+  },
+});

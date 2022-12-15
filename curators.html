@@ -1,0 +1,527 @@
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>تصميم هاتف</title>
+    <!-- Selectize Library Css File Cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/css/selectize.default.min.css"
+    />
+    <!-- Bootstrap Framework Css File -->
+    <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
+    <!--  Normalize Css File -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Main  Css File -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Font Awesome Library File -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Box Icon Library Css File Cdn -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Google Fonts Cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="top-nav py-2 not-print">
+      <div class="container-md">
+        <div class="nav-content">
+          <div class="navbar">
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              id="offcanvasNavbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                ></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item nav-img">
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLRrfGmicNOQwEeoCv7JtxJ69QOxUfJq0eyg&usqp=CAU"
+                      class="img-user"
+                      alt=""
+                    />
+                    <h5>محمد المهدي</h5>
+                    <h6>+1 (141) 437-8785</h6>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                      <i class="nav-icon bx bx-home"></i>
+                      الرئيسية
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bx bx-error-alt"></i>
+                      عن المنصه
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bx bx-user"></i>
+                      إنضم لنا / الشركات
+                    </a>
+                  </li>
+                </ul>
+                <ul
+                  class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-5"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bx bx-check-shield"></i>
+                      سياسة الخصوصية
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bx bx-book-bookmark"></i>
+                      شروط الاستخدام
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bx bx-revision"></i>
+                      سياسة الارجاع
+                    </a>
+                  </li>
+                </ul>
+                <ul
+                  class="navbar-nav justify-content-end flex-grow-1 pe-3 mt-5"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bx bx-log-in"></i>
+                      تسجيل الخروج
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="image-holder">
+              <a href="#">
+                <span class="badge">0</span>
+                <img
+                  src="img/Notification.png"
+                  alt="Notification"
+                  width="22"
+                  height="26"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="img-holder">
+            <h1 class="m-0">
+              <a href="index.html">
+                <img src="img/LOGO.png" alt="" width="35" />
+              </a>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section box-section coordinator-section py-4">
+      <div class="container-md mt-4">
+        <div class="d-flex align-items-center justify-content-between mb-4">
+          <h6 class="lg-title mb-0 fw-600">المنسقين</h6>
+          <button
+            class="btn-sliders"
+            data-bs-toggle="modal"
+            data-bs-target="#financialTransactionsModal"
+          >
+            <i class="fa fa-sliders"></i>
+          </button>
+          <!-- curators Modal -->
+          <div
+            class="modal fade"
+            id="financialTransactionsModal"
+            aria-labelledby="financialTransactionsModal"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-fullscreen">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button
+                    type="button"
+                    class="btn-close ms-0 me-auto transaction"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <i class="fa fa fa-chevron-right"></i> <span>عودة</span>
+                  </button>
+                  <h6 class="modal-title m-0" id="financialTransactionsModal">
+                    نتائج البحث
+                  </h6>
+                </div>
+                <div class="modal-body">
+                  <div class="row g-3">
+                    <div class="col-12">
+                      <p class="mb-2 fs-6 fw-600">البحث</p>
+                      <div class="search-bar mb-3">
+                        <i class="bx bx-search"></i>
+                        <input
+                          type="search"
+                          name=""
+                          id=""
+                          placeholder="إبحث هنا....."
+                        />
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <p class="mb-3 fs-6 fw-600">التصنيفات</p>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input inp-check"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault1"
+                        />
+                        <div class="filter">
+                          <i class="fa-solid fa-holly-berry icon-filter"></i>
+                          <label
+                            class="form-check-label filter-label"
+                            for="flexCheckDefault1"
+                          >
+                            ديكورات وزينة
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input inp-check"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault2"
+                        />
+                        <div class="filter">
+                          <i class="fa-regular fa-images icon-filter"></i>
+                          <label
+                            class="form-check-label filter-label"
+                            for="flexCheckDefault2"
+                          >
+                            التصوير الفوتوغرافي
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input inp-check"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault3"
+                        />
+                        <div class="filter">
+                          <i class="fa-solid fa-utensils icon-filter"></i>
+                          <label
+                            class="form-check-label filter-label"
+                            for="flexCheckDefault3"
+                          >
+                            المآكولات
+                          </label>
+                        </div>
+                      </div>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input inp-check"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault4"
+                        />
+                        <div class="filter">
+                          <i class="fa-regular fa-building icon-filter"></i>
+                          <label
+                            class="form-check-label filter-label"
+                            for="flexCheckDefault4"
+                          >
+                            القاعات
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <p class="mb-2 fs-6 fw-600">المهارات</p>
+                      <select multiple class="select-filter" id="filter-option">
+                        <option value=""></option>
+                        <option value="1">Awesome</option>
+                        <option value="2">Beast</option>
+                        <option value="3">Compatible</option>
+                        <option value="4">Thomas Edison</option>
+                        <option value="5">Nikola</option>
+                        <option value="6">Selectize</option>
+                        <option value="7">Javascript</option>
+                      </select>
+                    </div>
+                    <div class="col-12">
+                      <p class="mb-3 fs-6 fw-600">التقييم</p>
+                      <div class="star-bar">
+                        <div class="starts">
+                          <i class="fas fa-star gold"></i>
+                          <i class="fas fa-star gold"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                        </div>
+                        <div class="del"><i class="fa-solid fa-x"></i></div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <p class="mb-3 fs-6 fw-600">متصل</p>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input inp-check"
+                          type="checkbox"
+                          value=""
+                          id="status"
+                        />
+                        <div class="filter">
+                          <i class="fa-solid fa-circle green-color"></i>
+                          <label
+                            class="form-check-label filter-label mb-1"
+                            for="status"
+                          >
+                            متصل الآن
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <p class="mb-3 fs-6 fw-600">متصل</p>
+                      <div class="form-check mb-2">
+                        <input
+                          class="form-check-input inp-check"
+                          type="checkbox"
+                          value=""
+                          id="status2"
+                        />
+                        <div class="filter mb-2">
+                          <i
+                            class="fa-solid fa-user-shield icon-filter green-color"
+                          ></i>
+                          <label
+                            class="form-check-label filter-label"
+                            for="status2"
+                          >
+                            موثوق
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-2">
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="curator-box">
+              <div class="img-holder">
+                <a href="#">
+                  <img src="img/person2.jpg" alt="profile photo" />
+                </a>
+              </div>
+              <h2 class="name">
+                <i class="fa-solid fa-circle-check checked"></i>
+                <a href="#">مروة رجب عبد العال</a>
+                <i class="fa-solid fa-circle status active"></i>
+              </h2>
+              <div class="curator-info">
+                <div class="job">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span>مصورة فوتوفرافيه</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i> <span>مصر</span>
+                </div>
+              </div>
+              <div class="starts">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div class="btn-holder">
+                <button class="btn-profile w-lg">
+                  الملف الشخصي
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="curator-box">
+              <div class="img-holder">
+                <a href="#">
+                  <img src="img/person.png" alt="profile photo" />
+                </a>
+              </div>
+              <h2 class="name">
+                <i class="fa-solid fa-circle-check checked"></i>
+                <a href="#">عز الدين اوناحي</a>
+                <i class="fa-solid fa-circle status"></i>
+              </h2>
+              <div class="curator-info">
+                <div class="job">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span>منسق ديكورات</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i> <span>المغرب</span>
+                </div>
+              </div>
+              <div class="starts">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn-holder">
+                <button class="btn-profile w-lg">
+                  الملف الشخصي
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="curator-box">
+              <div class="img-holder">
+                <a href="#">
+                  <img src="img/person2.jpg" alt="profile photo" />
+                </a>
+              </div>
+              <h2 class="name">
+                <i class="fa-solid fa-circle-check checked"></i>
+                <a href="#">مروة رجب عبد العال</a>
+                <i class="fa-solid fa-circle status active"></i>
+              </h2>
+              <div class="curator-info">
+                <div class="job">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span>مصورة فوتوفرافيه</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i> <span>مصر</span>
+                </div>
+              </div>
+              <div class="starts">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+              </div>
+              <div class="btn-holder">
+                <button class="btn-profile w-lg">
+                  الملف الشخصي
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4">
+            <div class="curator-box">
+              <div class="img-holder">
+                <a href="#">
+                  <img src="img/person.png" alt="profile photo" />
+                </a>
+              </div>
+              <h2 class="name">
+                <i class="fa-solid fa-circle-check checked"></i>
+                <a href="#">عز الدين اوناحي</a>
+                <i class="fa-solid fa-circle status"></i>
+              </h2>
+              <div class="curator-info">
+                <div class="job">
+                  <i class="fa-solid fa-briefcase"></i>
+                  <span>منسق ديكورات</span>
+                </div>
+                <div class="location">
+                  <i class="fa-solid fa-location-dot"></i> <span>المغرب</span>
+                </div>
+              </div>
+              <div class="starts">
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star gold"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <div class="btn-holder">
+                <button class="btn-profile w-lg">
+                  الملف الشخصي
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <header class="header not-print" id="header">
+      <nav class="navbar main-nav py-1">
+        <div class="container-md">
+          <ul class="navbar-nav nav-menu align-items-center" id="nav-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="profile.html">
+                <i class="nav-icon bx bx-user-pin"></i>
+                <span class="nav-name">حسابي</span>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="nav-icon bx bx-conversation"></i>
+                <span class="nav-name">المحادثات</span>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="nav-icon bx bx-shopping-bag"></i>
+                <span class="nav-name">طلباتي</span>
+              </a>
+              <a class="nav-link" href="#">
+                <i class="nav-icon bx bx-grid-alt"></i>
+                <span class="nav-name">الأقسام</span>
+              </a>
+              <a class="nav-link" href="index.html">
+                <i class="nav-icon bx bx-home"></i>
+                <span class="nav-name">الرئيسية</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- Bootstrap Framework Js File -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- FontAwesome Library Js File -->
+    <script src="js/all.min.js"></script>
+    <!-- jquery Library Js File Cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+    <!-- Selectize Library Js File Cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.15.2/js/selectize.min.js"></script>
+    <!-- Main Js File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

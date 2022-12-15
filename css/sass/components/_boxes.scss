@@ -731,3 +731,76 @@
     }
   }
 }
+
+.curator-box {
+  &:hover {
+    box-shadow: 0 40px 21px rgb(187 193 195 / 35%);
+    background: #f2fffb;
+  }
+  text-align: center;
+  padding: 10px;
+  background-color: $white-color;
+  border-radius: 8px;
+  transition: $main-transition;
+  box-shadow: 0 8px 16px 0 rgb(10 14 29 / 1%), 0 8px 64px 0 rgb(119 119 119 / 2%);
+  border: 1px solid #f4f4f4;
+  .img-holder {
+    @include circle(90px, 90px);
+    box-shadow: 0px 0px 12px #f4f4f4;
+    max-width: 100%;
+    margin: 0px auto;
+    img {
+      @include full-w-h;
+      padding: 6px;
+      border-radius: 50%;
+    }
+  }
+  .name {
+    a {
+      color: #333333;
+      font-size: 13px;
+    }
+    i, svg {
+      cursor: pointer;
+      &.checked {
+        font-size: 11px;
+        color: #1877f2;
+      }
+      &.status {
+        font-size: 10px;
+        color: #ddd;
+        &.active {
+          color: #3bc100;
+        }
+      }
+    }
+  }
+  .curator-info {
+    margin-bottom: 10px;
+    text-align: center;
+    @include flex-center;
+    gap: 5px;
+    div {
+      @include flex-center;
+      gap: 2px;
+      i,svg {
+        font-size: 10px;
+        color: #979797;
+      }
+      span {
+        color: #919191;
+        font-size: 12px;
+      }
+    }
+  }
+  .starts {
+    i,svg {
+      font-size: 11px;
+      margin-bottom: 10px;
+      color: #e0e0e0;
+      &.gold {
+        color: #ffa200;
+      }
+    }
+  }
+}
